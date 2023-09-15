@@ -1,11 +1,110 @@
 .App {
   text-align: center;
+  background-image: url(./bg.jpg);
+  background-size: cover; /* Ensure the background image covers the entire screen */
+  display: flex; /* Use flexbox for centering */
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Set the height to the full viewport height */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Form{
+  position: absolute;
+  background:rgba(195, 161, 193, 0.5);
+  padding: 0px 40px 30px;
+  border-radius: 8px;
+  z-index: 2;
+  display: flex;
+  width: 30%;
+  flex-direction: column;
+  justify-content: center;
 }
+
+.AppSecond {
+  text-align: center;
+  background-image: url(./bg.jpg);  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh; /* Use min-height to ensure the background continues */
+  background-size: cover; /* Ensure the background image covers the entire screen */
+}
+
+
+.preferences {
+  display: flex; /* Yatay hizalama için flex kullanıyoruz */
+  background-color: #53007D;
+  padding: 10px;
+  border-radius: 8px;
+  color: rgba(206, 191, 205, 0.8);
+  font-size: 18px;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  margin-right:10px;
+}
+
+.preferences-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.preferences-info div {
+  margin-bottom: 5px; /* İstenilen boşluk miktarı */
+}
+
+.preferences-info span {
+  margin-left: 5px; /* İstenilen boşluk miktarı */
+  font-weight: bold; /* Kalın metin */
+}
+
+
+.main-content {
+  display: flex; /* Yatay hizalama için flex kullanıyoruz */
+  background-color: #53007D;
+  padding: 10px;
+  border-radius: 8px;
+  color: rgba(206, 191, 205, 0.8);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.preferences strong {
+  color: aliceblue;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Sol hizalama */
+  margin-left: 10px; /* İstenilen boşluk miktarı */
+}
+
+.section h3 {
+  color: white; /* Adjust color as needed */
+}
+
+.possibilities-list li {
+  font-size: 18px;
+  margin: 5px 0;
+  color: rgba(206, 191, 205, 0.8);
+  font-weight: bold;
+}
+
+.possibilities-list li {
+  font-size: 18px;
+  margin: 5px 0;
+  color: rgba(206, 191, 205, 0.8); /* Set color for list item text */
+  font-weight: bold;
+}
+.possibilities-list li::marker {
+  color: white; /* Set color for list item bullet */
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -36,3 +135,5 @@
     transform: rotate(360deg);
   }
 }
+
+
