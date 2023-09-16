@@ -46,7 +46,7 @@ const CreditCards = () => {
   return (
     <div className="App">
       <div>
-        <h2>Third Page</h2>
+        <h2>Selctions</h2>
         <p>Selected Start Date: {selectedStartDate}</p>
         <p>Selected End Date: {selectedEndDate}</p>
         <p>Selected People: {selectedPeople}</p>

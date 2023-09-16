@@ -15,7 +15,6 @@ function PeopleNumber({ onSelectPeopleNum }) {
     const selectedPeopleNum = parseInt(event.target.value, 10);
     setPeopleNumber(selectedPeopleNum);
     onSelectPeopleNum(selectedPeopleNum);
-    localStorage.setItem('selectedPeople', selectedPeopleNum.toString());
   };
 
   return (

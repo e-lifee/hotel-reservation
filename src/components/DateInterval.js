@@ -34,7 +34,6 @@ const Calendar = ({ onSelectStartDate, onSelectEndDate, onSelectDayDifference })
   function calculateDateDifference(start, end) {
     const parsedStartDate = new Date(start);
     const parsedEndDate = new Date(end);
-
     const differenceTime = Math.abs(parsedEndDate - parsedStartDate);
     const differenceDays = Math.ceil(differenceTime / (1000 * 60 * 60 * 24));
     setDayDifference(differenceDays);
